@@ -1,8 +1,8 @@
-# Capítulo 36 — Parte 3: Hydratación incremental y modos de renderizado por ruta
+# Capítulo 36 - Parte 3: Hydratación incremental y modos de renderizado por ruta
 
-> **Parte 3 de 4** · Capítulo 36 · PARTE XV — Angular 20 y el Futuro del Framework
+> **Parte 3 de 4** · Capítulo 36 · PARTE XV - Angular 20 y el Futuro del Framework
 
-Angular 20 estabilizó dos características que cambian profundamente cómo se define el SSR en una aplicación: la **hydratación incremental** y los **modos de renderizado por ruta**. Juntas permiten que cada ruta de la aplicación tenga su propia estrategia —CSR, SSR o SSG— declarada directamente en el archivo de rutas del servidor, sin tocar `angular.json`.
+Angular 20 estabilizó dos características que cambian profundamente cómo se define el SSR en una aplicación: la **hydratación incremental** y los **modos de renderizado por ruta**. Juntas permiten que cada ruta de la aplicación tenga su propia estrategia -CSR, SSR o SSG- declarada directamente en el archivo de rutas del servidor, sin tocar `angular.json`.
 
 → Ver Capítulo 27 para los conceptos base de SSR, hydration y SSG.
 
@@ -11,7 +11,7 @@ Angular 20 estabilizó dos características que cambian profundamente cómo se d
 La hydratación clásica (`provideClientHydration()`) hidrata toda la aplicación de una vez al cargar. La hydratación incremental, estabilizada en Angular 20, permite que cada bloque `@defer` en el template se hidrate de forma independiente, basándose en triggers reales del usuario o del viewport.
 
 ```typescript
-// app.config.ts — habilitar hydratación incremental
+// app.config.ts - habilitar hydratación incremental
 import { provideClientHydration, withIncrementalHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
@@ -51,7 +51,7 @@ Con `withIncrementalHydration()` activo, los bloques `@defer` pueden tener trigg
 }
 ```
 
-El resultado es que la página carga con todo el HTML del servidor visible, pero el JavaScript de Angular solo se ejecuta para los bloques con los que el usuario realmente interactúa. Los bloques que nunca se hydrata son esencialmente HTML inerte — no hay escuchas de eventos, no hay detección de cambios.
+El resultado es que la página carga con todo el HTML del servidor visible, pero el JavaScript de Angular solo se ejecuta para los bloques con los que el usuario realmente interactúa. Los bloques que nunca se hydrata son esencialmente HTML inerte - no hay escuchas de eventos, no hay detección de cambios.
 
 ### Impacto en métricas de rendimiento
 
@@ -70,7 +70,7 @@ flowchart LR
 Antes de Angular 20, la configuración de prerender y SSR era global en `angular.json`. El nuevo sistema permite que cada ruta declare su propio modo de renderizado en un archivo específico del servidor:
 
 ```typescript
-// app.routes.server.ts — solo se ejecuta en el servidor de Node
+// app.routes.server.ts - solo se ejecuta en el servidor de Node
 import { RenderMode, ServerRoute } from '@angular/ssr';
 
 export const serverRoutes: ServerRoute[] = [
@@ -115,7 +115,7 @@ El `RenderMode` enum tiene tres valores:
 ### Conectar el archivo al builder
 
 ```json
-// angular.json — apuntar al nuevo archivo de rutas del servidor
+// angular.json - apuntar al nuevo archivo de rutas del servidor
 {
   "server": "src/app/app.routes.server.ts"
 }

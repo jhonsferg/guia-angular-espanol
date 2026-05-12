@@ -1,6 +1,6 @@
-# Capítulo 36 — Parte 2: linkedSignal(), resource() y httpResource() en Angular 20
+# Capítulo 36 - Parte 2: linkedSignal(), resource() y httpResource() en Angular 20
 
-> **Parte 2 de 4** · Capítulo 36 · PARTE XV — Angular 20 y el Futuro del Framework
+> **Parte 2 de 4** · Capítulo 36 · PARTE XV - Angular 20 y el Futuro del Framework
 
 Angular 20 graduó tres APIs que estuvieron en fase experimental durante Angular 18 y 19: `linkedSignal()`, `resource()` y `httpResource()`. Con su promoción a *developer preview* (y algunos ya estables), el equipo de Angular señala que las APIs son estables y que el ecosistema puede empezar a adoptarlas con confianza en proyectos de producción.
 
@@ -104,12 +104,12 @@ export class DetallePedidoComponent {
 ```
 
 Los Signals disponibles en el objeto `resource`:
-- `resource.value()` — el dato cargado (o `undefined` si no hay dato aún)
-- `resource.isLoading()` — `true` mientras el loader está en progreso
-- `resource.error()` — el error capturado (o `undefined` si no hay error)
-- `resource.status()` — `'idle' | 'loading' | 'reloading' | 'resolved' | 'error' | 'local'`
-- `resource.reload()` — método para forzar una nueva carga
-- `resource.set(valor)` — sobreescribe el valor localmente sin recargar (estado `'local'`)
+- `resource.value()` - el dato cargado (o `undefined` si no hay dato aún)
+- `resource.isLoading()` - `true` mientras el loader está en progreso
+- `resource.error()` - el error capturado (o `undefined` si no hay error)
+- `resource.status()` - `'idle' | 'loading' | 'reloading' | 'resolved' | 'error' | 'local'`
+- `resource.reload()` - método para forzar una nueva carga
+- `resource.set(valor)` - sobreescribe el valor localmente sin recargar (estado `'local'`)
 
 ## httpResource(): resource integrado con HttpClient
 

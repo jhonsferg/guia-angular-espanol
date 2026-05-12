@@ -1,6 +1,6 @@
-# Capítulo 36 — Parte 1: `@let` en templates y signal-based queries
+# Capítulo 36 - Parte 1: `@let` en templates y signal-based queries
 
-> **Parte 1 de 4** · Capítulo 36 · PARTE XV — Angular 20 y el Futuro del Framework
+> **Parte 1 de 4** · Capítulo 36 · PARTE XV - Angular 20 y el Futuro del Framework
 
 Angular 20, lanzado en mayo de 2025, consolidó dos características que transforman la forma de escribir templates y consultar el DOM: la declaración de variables con `@let` y las signal-based queries que reemplazan a `@ViewChild` y `@ContentChild` con la ergonomía de los Signals.
 
@@ -33,7 +33,7 @@ Las variables declaradas con `@let` son:
 - **De solo lectura**: no se pueden reasignar desde el template ni desde la clase.
 
 ```html
-<!-- @let dentro de bloques — el scope es el bloque que la contiene -->
+<!-- @let dentro de bloques - el scope es el bloque que la contiene -->
 @if (producto(); as p) {
   @let descuento = p.precio * 0.1;
   <p>Precio con descuento: {{ p.precio - descuento | currency }}</p>
@@ -79,7 +79,7 @@ export class FormularioComponent {
   todosLosCampos = viewChildren<ElementRef<HTMLInputElement>>('campoNombre, campoClave');
 
   enfocarPrimerCampo(): void {
-    // No necesita ngAfterViewInit — el Signal ya tiene el valor
+    // No necesita ngAfterViewInit - el Signal ya tiene el valor
     this.campoNombre()?.nativeElement.focus();
   }
 

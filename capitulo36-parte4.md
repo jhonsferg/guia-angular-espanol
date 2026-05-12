@@ -1,6 +1,6 @@
-# Capítulo 36 — Parte 4: Zoneless, Angular 21 y el roadmap del framework
+# Capítulo 36 - Parte 4: Zoneless, Angular 21 y el roadmap del framework
 
-> **Parte 4 de 4** · Capítulo 36 · PARTE XV — Angular 20 y el Futuro del Framework
+> **Parte 4 de 4** · Capítulo 36 · PARTE XV - Angular 20 y el Futuro del Framework
 
 Con Angular 20 consolidando Signals, SSR por ruta e hydratación incremental, y Angular 21 cerrando el ciclo hacia un Angular completamente libre de Zone.js, el framework entra en una de las etapas más significativas de su historia. Esta parte resume el estado actual de Zoneless, las novedades confirmadas de Angular 21 y la dirección que toma el ecosistema.
 
@@ -11,7 +11,7 @@ Angular 20 promovió Zoneless change detection de _experimental_ a **developer p
 → Ver Capítulo 25, Parte 4 para la introducción a Zoneless.
 
 ```typescript
-// app.config.ts — Zoneless en Angular 20 (developer preview)
+// app.config.ts - Zoneless en Angular 20 (developer preview)
 import { provideExperimentalZonelessChangeDetection } from "@angular/core";
 
 export const appConfig: ApplicationConfig = {
@@ -24,7 +24,7 @@ export const appConfig: ApplicationConfig = {
 ```
 
 ```json
-// angular.json — quitar zone.js de polyfills para Zoneless completo
+// angular.json - quitar zone.js de polyfills para Zoneless completo
 {
   "polyfills": []
 }
@@ -54,7 +54,7 @@ Angular 21, lanzado en noviembre de 2025, se centró en tres ejes: **estabilizar
 La principal novedad de Angular 21 es la graduación de Zoneless a estable, renombrando la función de provisión:
 
 ```typescript
-// Angular 21 — nombre estable, sin el prefijo "Experimental"
+// Angular 21 - nombre estable, sin el prefijo "Experimental"
 import { provideZonelessChangeDetection } from "@angular/core";
 
 export const appConfig: ApplicationConfig = {
@@ -72,7 +72,7 @@ El paquete `zone.js` puede eliminarse completamente del `package.json` en proyec
 Los formularios basados en Signals permiten definir el estado del formulario como un grafo reactivo sin `FormControl` ni `FormGroup` tradicionales:
 
 ```typescript
-// Angular 21 — Signal Forms (developer preview)
+// Angular 21 - Signal Forms (developer preview)
 import { signalForm, signalControl } from "@angular/forms";
 
 export class LoginComponent {
@@ -112,7 +112,7 @@ Los Signal Forms son la respuesta a uno de los puntos de fricción históricos d
 Angular 21 introdujo `@angular/build` como paquete dedicado al builder basado en esbuild, separándolo de `@angular-devkit/build-angular`. Esto permite actualizaciones más frecuentes del tooling sin estar atado al ciclo de lanzamiento del core.
 
 ```bash
-# Angular 21 — migración automática al nuevo paquete de build
+# Angular 21 - migración automática al nuevo paquete de build
 ng update @angular/cli
 # El migration schematic actualiza el builder en angular.json automáticamente
 ```
@@ -169,4 +169,4 @@ Las guías de migración oficiales en `angular.dev` documentan cada API deprecad
 
 ## ¿Qué sigue?
 
-Llegaste al final de la guía. Con estos 36 capítulos tienes las herramientas para construir, optimizar, testear y desplegar aplicaciones Angular modernas — desde el primer `ng new` hasta las últimas APIs de Angular 21.
+Llegaste al final de la guía. Con estos 36 capítulos tienes las herramientas para construir, optimizar, testear y desplegar aplicaciones Angular modernas - desde el primer `ng new` hasta las últimas APIs de Angular 21.

@@ -227,7 +227,7 @@ En aplicaciones con 200+ componentes, la diferencia puede ser de varios milisegu
 
 ## Estado actual y roadmap
 
-En Angular 21, `provideExperimentalZonelessChangeDetection()` fue reemplazado por `provideZonelessChangeDetection()` —sin el prefijo `Experimental`— y promovido a API estable. La recomendación es:
+En Angular 21, `provideExperimentalZonelessChangeDetection()` fue reemplazado por `provideZonelessChangeDetection()` -sin el prefijo `Experimental`- y promovido a API estable. La recomendación es:
 
 - **Proyectos nuevos**: activar zoneless desde el inicio si el equipo está dispuesto a usar Signals de forma consistente.
 - **Proyectos existentes**: migrar incrementalmente: activar `OnPush` en todos los componentes primero, luego migrar estado a Signals, y finalmente activar zoneless.

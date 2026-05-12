@@ -1,12 +1,12 @@
-# Angular: De Cero a Experto — La Guía Definitiva en Español
+# Angular: La Guía en Español
 
-> La guía más completa de Angular en español. Cubre Angular 17–21 desde los fundamentos hasta arquitecturas de nivel enterprise, con Signals, NgRx, SSR, micro-frontends y todo lo nuevo en Angular 20 y 21.
+> La guía de Angular en español. Cubre Angular 17–21 desde los fundamentos hasta arquitecturas de nivel enterprise, con Signals, NgRx, SSR, micro-frontends y todo lo nuevo en Angular 20 y 21.
 
 ---
 
 ## ¿Qué es esta guía?
 
-Esta guía está escrita para desarrolladores hispanohablantes que quieren dominar Angular de verdad — no solo aprender la sintaxis, sino entender el *por qué* detrás de cada decisión de diseño del framework. Cada concepto se explica como lo haría un senior a un colega: directo, honesto y con ejemplos que resuelven problemas reales.
+Esta guía está escrita para desarrolladores hispanohablantes que quieren dominar Angular de verdad - no solo aprender la sintaxis, sino entender el *por qué* detrás de cada decisión de diseño del framework. Cada concepto se explica como lo haría un senior a un colega: directo, honesto y con ejemplos que resuelven problemas reales.
 
 No es un tutorial de "hola mundo" ni una traducción de la documentación oficial. Es una guía de referencia progresiva que construye conocimiento de forma acumulativa, partiendo de los fundamentos y llegando a patrones avanzados de arquitectura, rendimiento y despliegue en producción.
 
@@ -51,7 +51,7 @@ La guía está organizada en **15 partes temáticas** con **36 capítulos** y **
 
 ## Tabla de contenidos completa
 
-### PARTE I — Primeros Pasos con Angular
+### PARTE I - Primeros Pasos con Angular
 *Capítulos 1–2 · 8 archivos*
 
 Cubre la historia del framework, el ecosistema de herramientas, la estructura de un proyecto y el proceso de arranque. Ideal para quien nunca ha tocado Angular.
@@ -69,7 +69,7 @@ Cubre la historia del framework, el ecosistema de herramientas, la estructura de
 
 ---
 
-### PARTE II — Componentes: El Alma de Angular
+### PARTE II - Componentes: El Alma de Angular
 *Capítulos 3–4 · 8 archivos*
 
 Todo lo que necesitas saber sobre componentes: desde la anatomía básica hasta técnicas avanzadas de proyección de contenido y carga diferida de UI.
@@ -87,7 +87,7 @@ Todo lo que necesitas saber sobre componentes: desde la anatomía básica hasta 
 
 ---
 
-### PARTE III — Templates y Directivas
+### PARTE III - Templates y Directivas
 *Capítulos 5–6 · 8 archivos*
 
 Data binding en todas sus formas, la nueva sintaxis de control de flujo y cómo crear directivas personalizadas de atributo y estructurales.
@@ -105,7 +105,7 @@ Data binding en todas sus formas, la nueva sintaxis de control de flujo y cómo 
 
 ---
 
-### PARTE IV — Pipes: Transformando Datos
+### PARTE IV - Pipes: Transformando Datos
 *Capítulo 7 · 4 archivos*
 
 Los pipes built-in de Angular, cómo encadenarlos y parametrizarlos, y cómo crear pipes personalizados con control total del rendimiento.
@@ -119,7 +119,7 @@ Los pipes built-in de Angular, cómo encadenarlos y parametrizarlos, y cómo cre
 
 ---
 
-### PARTE V — Servicios e Inyección de Dependencias
+### PARTE V - Servicios e Inyección de Dependencias
 *Capítulos 8–9 · 8 archivos*
 
 La arquitectura de capas de Angular, el sistema de DI, la jerarquía de inyectores y la migración completa del mundo NgModules al mundo Standalone.
@@ -137,7 +137,7 @@ La arquitectura de capas de Angular, el sistema de DI, la jerarquía de inyector
 
 ---
 
-### PARTE VI — Navegación y Routing
+### PARTE VI - Navegación y Routing
 *Capítulos 10–11 · 8 archivos*
 
 Configuración del router, navegación programática, rutas dinámicas, lazy loading, guards funcionales y estrategias de preloading.
@@ -155,7 +155,7 @@ Configuración del router, navegación programática, rutas dinámicas, lazy loa
 
 ---
 
-### PARTE VII — Formularios
+### PARTE VII - Formularios
 *Capítulos 12–13 · 8 archivos*
 
 Los dos enfoques de formularios en Angular: template-driven para casos simples y reactive forms para validación compleja, dinámismo y control total.
@@ -173,7 +173,7 @@ Los dos enfoques de formularios en Angular: template-driven para casos simples y
 
 ---
 
-### PARTE VIII — Comunicación HTTP
+### PARTE VIII - Comunicación HTTP
 *Capítulos 14–15 · 8 archivos*
 
 `HttpClient` con tipado genérico, manejo de errores, interceptores funcionales para autenticación, loading global y caché con RxJS.
@@ -191,7 +191,7 @@ Los dos enfoques de formularios en Angular: template-driven para casos simples y
 
 ---
 
-### PARTE IX — Programación Reactiva con RxJS
+### PARTE IX - Programación Reactiva con RxJS
 *Capítulos 16–18 · 12 archivos*
 
 RxJS de cero a avanzado: Observables, Subjects, operadores de transformación/filtrado/combinación, patrones reactivos en servicios y marble testing.
@@ -213,7 +213,7 @@ RxJS de cero a avanzado: Observables, Subjects, operadores de transformación/fi
 
 ---
 
-### PARTE X — Angular Signals: Reactividad Moderna
+### PARTE X - Angular Signals: Reactividad Moderna
 *Capítulos 19–20 · 8 archivos*
 
 La trinidad reactiva de Signals, inputs y outputs modernos, interoperabilidad con RxJS, gestión de estado local, `resource()`, `httpResource()` y el camino a Zoneless.
@@ -231,7 +231,7 @@ La trinidad reactiva de Signals, inputs y outputs modernos, interoperabilidad co
 
 ---
 
-### PARTE XI — Gestión de Estado con NgRx
+### PARTE XI - Gestión de Estado con NgRx
 *Capítulos 21–24 · 16 archivos*
 
 NgRx completo: el patrón Redux, acciones, reducers, selectors memoizados, effects con RxJS, Entity, Router Store, DevTools y el moderno Signal Store.
@@ -257,7 +257,7 @@ NgRx completo: el patrón Redux, acciones, reducers, selectors memoizados, effec
 
 ---
 
-### PARTE XII — Optimización y Rendimiento
+### PARTE XII - Optimización y Rendimiento
 *Capítulos 25–27 · 12 archivos*
 
 Change Detection en profundidad, OnPush, Zoneless, Virtual Scrolling, imágenes optimizadas, análisis de bundle, Core Web Vitals y SSR completo.
@@ -279,7 +279,7 @@ Change Detection en profundidad, OnPush, Zoneless, Virtual Scrolling, imágenes 
 
 ---
 
-### PARTE XIII — Librerías Esenciales del Ecosistema
+### PARTE XIII - Librerías Esenciales del Ecosistema
 *Capítulos 28–31 · 16 archivos*
 
 Angular Material (Material 3), CDK, Tailwind CSS y una suite completa de testing con Jest, Angular Testing Library y Playwright.
@@ -305,7 +305,7 @@ Angular Material (Material 3), CDK, Tailwind CSS y una suite completa de testing
 
 ---
 
-### PARTE XIV — Arquitectura y Patrones Avanzados
+### PARTE XIV - Arquitectura y Patrones Avanzados
 *Capítulos 32–35 · 16 archivos*
 
 Patrones de arquitectura escalable, micro-frontends con Module Federation y Native Federation, internacionalización, accesibilidad avanzada y despliegue en producción.
@@ -331,7 +331,7 @@ Patrones de arquitectura escalable, micro-frontends con Module Federation y Nati
 
 ---
 
-### PARTE XV — Angular 20 y el Futuro del Framework
+### PARTE XV - Angular 20 y el Futuro del Framework
 *Capítulo 36 · 4 archivos*
 
 Las novedades estables de Angular 20: `@let` en templates, signal-based queries, `linkedSignal()` y `resource()` estables, hydratación incremental, modos de renderizado por ruta, HMR mejorado, y el roadmap hacia Angular 21 con Zoneless estable y Signal Forms.
